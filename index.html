@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>toki pona play thing</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Load external CSS styles -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- w3.js -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+</head>
+
+<body class="w3-content">
+
+    <div class="w3-bar w3-text-yellow w3-indigo">
+        <span class="w3-bar-item">toki pona play thing</span>
+        <a href="#" class="w3-bar-item w3-button w3-right" onclick="w3.show('#modal01')">about</a>
+    </div>    
+
+    <div class="w3-container w3-margin-top">
+        <input class="w3-input w3-border w3-border-blue w3-round-large w3-pale-yellow" oninput="w3.filterHTML('#id01', '.item', this.value)" placeholder="Enter a word or phrase in English, Italian, Russian or Toki Pona...">
+    </div>    
+
+    <div class="w3-container" id="id01">
+        <div class="w3-row w3-margin item" w3-repeat="records">
+            <div class="w3-quarter">
+                <div class="w3-card w3-round-xxlarge w3-margin-right w3-center w3-pale-yellow">
+                    <div class="w3-center linja-pona">{{toki}}</div>
+                    <h2 class="w3-center">{{toki}}</h2>
+                </div>
+            </div>
+            <div class="w3-threequarter">
+                <div class="w3-card w3-round-xxlarge w3-margin-right w3-sand">
+                    <ul class="w3-ul">
+                        <li class="w3-border-blue">EN: {{eng}}</li>
+                        <li class="w3-border-blue">IT: {{ita}}</li>
+                        <li class="w3-border-blue">RU: {{rus}}</li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div id="modal01" class="w3-modal">
+        <div class="w3-modal-content">
+
+            <header class="w3-container w3-text-yellow w3-indigo">
+                <span onclick="w3.hide('#modal01')" class="w3-button w3-display-topright">&times;</span>
+                <h2>toki pona play thing</h2>
+            </header>
+
+            <div class="w3-container w3-text-blue w3-sand">
+                <p><a href="https://en.wikipedia.org/wiki/Toki_Pona">Toki Pona</a> Partly inspired by Taoist philosophy, the language is designed to help users concentrate on basic things and to promote positive thinking.</p>
+                <p>Thanks to everyone:</p>
+                <ul>
+                    <li>
+                        <a href="https://tokipona.org/">Sonja Lang</a>: Toki Pona (official site).
+                    </li>
+                    <li>
+                        <a href="https://github.com/jackhumbert/sitelen-pona-pona">jackhumbert Jack Humbert</a>: sitelen pona pona, The font that does it all.
+                    </li>
+                    <li>
+                        <a href="https://github.com/x-raizor/visual-tokipona">x-raizor Andrew Shapiro</a>: Toki Pona Visual Dictionary with English, Italian and Russian translation in pictures.
+                    </li>
+                    <li>
+                        <a href="https://github.com/mlsteele/tokipona-lipunimi">mlsteele Miles Steele</a>: A toki pona language reference to and from English.
+                    </li>
+                    <li>
+                        <a href="https://jan-lope.github.io/">jan Lope</a>: Toki Pona Lessons, Toki Pona Lektionen, and more.
+                    </li>
+                </ul>
+                <p>-ricky</p>
+            </div>
+
+            <footer class="w3-container w3-text-yellow w3-indigo">
+                <p><i>be nice to everyone you meet, and be nice yourself</i></p>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Load external JavaScript -->
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

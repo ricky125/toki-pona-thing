@@ -1,0 +1,13 @@
+/* Place your CSS styles in this file */
+@font-face { 
+    font-family: 'sitelen pona pona';
+    src: url('font/sitelen-pona-pona.otf');
+    font-weight: 400;
+}
+.linja-pona {
+  font-family: "sitelen pona pona";
+  font-feature-settings: "liga" 1, "clig" 1, "calt" 1, "kern" 1, "mark" 1;
+  text-rendering: optimizeLegibility;
+  font-size: 4em;
+  color: blue;
+}
